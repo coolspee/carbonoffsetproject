@@ -24,13 +24,21 @@ function App() {
     },
   };
 
-  var [emissionsArray, setEmissionsArray] = React.useState(
-    JSON.parse(localStorage.getItem("userdata")) || []
-  );
-  if (!emissionsArray) {
-    setEmissionsArray([]);
-  } else {
+  var array = []
+
+  if (typeof window !== 'undefined') {
+    // Perform localStorage action
+    array = JSON.parse(localStorage.getItem("userdata")) || []
+    
+    if (!emissionsArray) {
+      setEmissionsArray([]);
+    } else {
+    }
   }
+
+  var [emissionsArray, setEmissionsArray] = React.useState(
+    array
+  );
 
   let chartData = [
     [
