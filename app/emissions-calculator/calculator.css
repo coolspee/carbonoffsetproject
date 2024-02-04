@@ -54,7 +54,7 @@ html {
     padding: 20px;
     border: 2px solid black;
     border-radius: 10px;
-    translate: "transformX(-50), transformY(-50)"
+    transform: translate(-50%, -50%)
 }
 
 .sumbitData {

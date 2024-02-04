@@ -80,9 +80,6 @@ function Offsets() {
               Support local farmers and choose seasonal produce to reduce food
               transportation emissions.
             </li>
-            <li>Plan meals and store food properly to minimize food waste.</li>
-            <li>Invest in wind or solar energy for your home's power needs.</li>
-            <li>Choose appliances with high energy efficiency ratings.</li>
             <li>
               Stay informed about environmental issues to make conscious
               choices.

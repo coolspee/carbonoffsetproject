@@ -171,8 +171,8 @@ function App() {
               categories[document.getElementById("emitionsDropdown").value]
                 .value *
               2.205;
-              console.log(thisVal)
-            if (thisVal <= 0 || thisVal == null || thisVal == NaN) {return};
+              
+            if (thisVal <= 0 || thisVal == null || isNaN(thisVal)) {return};
 
             var newData = {
               date: Date.now(),
