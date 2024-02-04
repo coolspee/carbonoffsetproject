@@ -29,16 +29,17 @@ function App() {
   if (typeof window !== 'undefined') {
     // Perform localStorage action
     array = JSON.parse(localStorage.getItem("userdata")) || []
-    
-    if (!emissionsArray) {
-      setEmissionsArray([]);
-    } else {
-    }
+  
   }
 
   var [emissionsArray, setEmissionsArray] = React.useState(
     array
   );
+
+  if (!emissionsArray) {
+    setEmissionsArray([]);
+  } else {
+  }
 
   let chartData = [
     [
