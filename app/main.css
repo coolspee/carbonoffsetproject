@@ -1,0 +1,125 @@
+html {
+    scroll-behavior: smooth;
+    background-color: #1E1E1E
+}
+
+.topsec {
+    background-image: url("https://cdn.glitch.global/188ab782-9d51-45da-97bf-b869a1dc9443/background2.png?v=1706994988527");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body {
+    width:100%;
+    height:100%;
+    margin:0px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color: white;
+    /* background-color: rgb(229, 255, 228); */
+}
+
+.title {
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top:50px
+}
+
+.missionBtn {
+    background-color: #88ff7a;
+    border-radius: 10px;
+    border: 0px solid #33b040;
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+    transition-duration: .1s;
+    font-size: 20px;
+}
+
+.missionBtn:hover {
+    background-color: #7ae66e;
+    border: 0px solid #2b9936
+}
+
+.missionBtn:active {
+    background-color: #69c75f;
+    border: 0px solid #237d2c;
+}
+
+.calculatorBtn {
+    margin-left: 10%;
+    background-color: #88ff7a;
+    border-radius: 10px;
+    border: 0px solid #33b040;
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.calculatorBtn:hover {
+    background-color: #7ae66e;
+    border: 0px solid #2b9936
+}
+
+.calculatorBtn:active {
+    background-color: #69c75f;
+    border: 0px solid #237d2c
+}
+
+.btnContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.hr {
+    border: none;
+    height: 0px;
+    background-color: #000;
+    margin-top:0px;
+}
+
+.missionTitle {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.missionContent {
+    margin: 40px;
+    margin-top:0px;
+    font-size:20px;
+}
+
+.missionSection {
+    background-color: white;
+    /* background-color: rgb(229, 255, 228) */
+}
+
+
+
+
+.image-fade-container {
+    width: "100%";
+    overflow: hidden;
+  }
+  
+  .image-fade-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .image-fade-container::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgb(229, 255, 228), rgba(229, 255, 228, 0));
+  }

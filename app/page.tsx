@@ -1,95 +1,41 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client"
 
-export default function Home() {
+import { Navbar } from "@/components"
+import "./main.css"
+function App() {
+
+  
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className="body">
+      <div className="topsec" style={{height: "100vh"}}>
+        <Navbar />
+        <h1 className="title">Eco Emissions</h1>
+
+        <div className="btnContainer">
+          <button className="missionBtn" onClick={(event) => {
+            document.getElementById("missionContent")?.scrollIntoView()
+          }}>Our Mission</button>
+          <button className="calculatorBtn" onClick={(event) => {
+            location.href = "/emissions-calculator"
+          }}>Calculator</button>
+
+
+          {/*  Place arrow here to prompt scroll down  */}
         </div>
       </div>
+      <div className="missionSection">
+        <hr className="hr"></hr>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+        <div style={{padding: "10px"}}>
+        <h2 className="missionTitle">Our Mission</h2>
+        <p id="missionContent" className="missionContent">At Carbon Counter, our mission is to make environmental awareness an integral part of decision-making by offering a simple yet powerful tool to calculate carbon emissions. Founded with a passion for sustainability, our creators envision a world where individuals and organizations are not just mindful of their actions, but actively engaged in understanding and reducing their carbon footprint. Through accessible and precise emission calculations, we strive to enlighten users about the environmental impact of their choices, fostering a sense of responsibility and empowering them to make informed, eco-conscious decisions in their daily lives.
+        <br />
+        <br />
+        At the core of our mission is the belief that awareness sparks change. The creators behind Carbon Counter are driven by the desire to bridge the gap between knowledge and action. By providing a platform that demystifies carbon emissions and encourages a deeper understanding of personal and collective environmental impact, we aim to inspire a global community committed to positive change. Together, we embark on a journey towards a more sustainable future, where every individual is not just aware of their emissions, but actively strives to minimize their ecological footprint for the well-being of our planet.</p>
+        </div>
       </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+    </div>
+  )
 }
+
+export default App;

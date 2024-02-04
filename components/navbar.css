@@ -1,0 +1,21 @@
+.navbar {
+    height: 70px;
+    background-color: #1E1E1E;
+    color: white;
+    display: flex
+}
+
+.navBtn {
+    margin-left: 40px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    font-size: 20px;
+    align-items: center; 
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+

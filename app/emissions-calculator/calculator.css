@@ -1,0 +1,76 @@
+html {
+    overflow: hidden;
+}
+
+.tableHeader {
+    /*background-color: lightgray;*/
+    padding: 5px;
+}
+
+.emissionsContent {
+    margin-top: 30px;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    border-left: 1px solid black;
+}
+
+.totalContainer {
+    font-size: 20px;
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.addBtn {
+    border: 1px solid black;
+    background-color: #dedede;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    margin-left: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    transition-duration: .1s;
+}
+
+.addBtn:hover {
+    background-color: #c7c7c7;
+}
+
+.addBtn:active {
+    background-color: #ababab;
+}
+
+.addEmissions {
+    position: absolute;
+    background-color: lightgray;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    translate: "transformX(-50), transformY(-50)"
+}
+
+.sumbitData {
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    transition-duration: .1s;
+}
+
+.sumbitData:hover {
+    background-color: #e3e3e3;
+}
+
+.sumbitData:active {
+    background-color: #c9c9c9;
+}
